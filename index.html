@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List - JS Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📝 Lista de tarefas</h1>
+            <p>Organize suas tarefas diárias</p>
+        </header>
+
+        <div class="input-section">
+            <input 
+                type="text" 
+                id="taskInput" 
+                placeholder="Digite uma nova tarefa..."
+                maxlength="100"
+            >
+            <button id="addBtn">Adicionar</button>
+        </div>
+
+        <div class="stats">
+            <span id="totalTasks">Total: 0</span>
+            <span id="completedTasks">Concluídas: 0</span>
+        </div>
+
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">Todas</button>
+            <button class="filter-btn" data-filter="pending">Pendentes</button>
+            <button class="filter-btn" data-filter="completed">Concluídas</button>
+        </div>
+
+        <ul id="taskList" class="task-list">
+            <!-- Tasks serão inseridas aqui via JavaScript -->
+        </ul>
+
+        <div class="actions">
+            <button id="clearCompleted">Limpar Concluídas</button>
+            <button id="clearAll">Limpar Todas</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
