@@ -1,11 +1,13 @@
-Como Usar
+📦 Como Usar
 Clone o repositório
 
-bash
+*bash*
+
 git clone https://github.com/seu-usuario/todo-list-js.git
 Abra o projeto
 
-bash
+*bash*
+
 cd todo-list-js
 Execute
 
